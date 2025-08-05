@@ -19,12 +19,11 @@ export default function AboutHero() {
           </div>
           
           <h1 className="text-5xl lg:text-7xl font-light text-white mb-8 tracking-wide leading-tight">
-            About <span className="font-bold bg-gradient-to-r from-amber-400 to-orange-400 bg-clip-text text-transparent">PICK TOP</span>
+            <span className="font-bold bg-gradient-to-r from-amber-400 to-orange-400 bg-clip-text text-transparent">PICK TOP INTERIOR'S</span>
             <br />
-            <span className="font-bold">INTERIOR'S</span>
           </h1>
           
-          <p className="text-xl lg:text-2xl text-slate-300 font-light leading-relaxed max-w-3xl mx-auto mb-12">
+         <p className="text-xl lg:text-2xl text-slate-300 font-light leading-relaxed max-w-3xl mx-auto mb-12">
             Your trusted partner for premium interior decor and steel door solutions.
           </p>
           
