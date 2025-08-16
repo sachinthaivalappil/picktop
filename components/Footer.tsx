@@ -23,7 +23,7 @@ export default function Footer() {
               <a href="https://facebook.com" className="group w-12 h-12 bg-slate-800 hover:bg-blue-600 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 cursor-pointer">
                 <i className="ri-facebook-fill text-lg group-hover:scale-110 transition-transform"></i>
               </a>
-              <a href="https://instagram.com" className="group w-12 h-12 bg-slate-800 hover:bg-pink-600 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 cursor-pointer">
+              <a href="https://www.instagram.com/picktop_interiors?igsh=MzE2NHRqNnpiNW1x" target="_blank" rel="noopener noreferrer" className="group w-12 h-12 bg-slate-800 hover:bg-pink-600 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 cursor-pointer">
                 <i className="ri-instagram-fill text-lg group-hover:scale-110 transition-transform"></i>
               </a>
               <a href="https://wa.me/919946826583" className="group w-12 h-12 bg-slate-800 hover:bg-green-600 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 cursor-pointer">

@@ -96,7 +96,7 @@ export default function BrandValues() {
                   <div className="text-slate-300 text-sm">Projects Completed</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-amber-400 mb-2">15+</div>
+                  <div className="text-3xl font-bold text-amber-400 mb-2">7+</div>
                   <div className="text-slate-300 text-sm">Years Experience</div>
                 </div>
                 <div className="text-center">

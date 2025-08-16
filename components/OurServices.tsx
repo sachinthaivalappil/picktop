@@ -1,6 +1,8 @@
 
 'use client';
 
+import { openWhatsApp, MessageType } from '@/utils/whatsapp';
+
 export default function OurServices() {
   const services = [
     {
@@ -15,7 +17,8 @@ export default function OurServices() {
         "Technical Engineering",
         "Project Visualization"
       ],
-      gradient: "from-amber-500 to-orange-500"
+      gradient: "from-amber-500 to-orange-500",
+      messageType: "design-fabrication" as MessageType
     },
     {
       title: "Glass & Metal Artistry",
@@ -29,7 +32,8 @@ export default function OurServices() {
         "Glass Partition Systems",
         "Balcony & Staircase Design"
       ],
-      gradient: "from-slate-600 to-slate-800"
+      gradient: "from-slate-600 to-slate-800",
+      messageType: "glass-metal" as MessageType
     },
     {
       title: "Construction & Installation",
@@ -43,7 +47,8 @@ export default function OurServices() {
         "Renovation & Restoration",
         "Project Management"
       ],
-      gradient: "from-blue-600 to-blue-800"
+      gradient: "from-blue-600 to-blue-800",
+      messageType: "construction" as MessageType
     }
   ];
 
@@ -83,8 +88,12 @@ export default function OurServices() {
                 ))}
               </div>
               
-              <button className={`group w-full bg-gradient-to-r ${service.gradient} hover:shadow-lg text-white font-medium px-6 py-4 rounded-none transition-all duration-300 whitespace-nowrap cursor-pointer`}>
+              <button 
+                onClick={() => openWhatsApp(service.messageType)}
+                className={`group w-full bg-gradient-to-r ${service.gradient} hover:shadow-lg text-white font-medium px-6 py-4 rounded-none transition-all duration-300 whitespace-nowrap cursor-pointer`}
+              >
                 <span className="flex items-center justify-center">
+                  <i className="ri-whatsapp-line mr-2"></i>
                   Request Quote
                   <i className="ri-arrow-right-line ml-2 group-hover:translate-x-1 transition-transform"></i>
                 </span>

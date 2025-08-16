@@ -43,7 +43,7 @@ export default function ContactInfo() {
 
   const socialLinks = [
     { icon: 'ri-facebook-fill', name: 'Facebook', href: 'https://facebook.com/picktopinteriors' },
-    { icon: 'ri-instagram-fill', name: 'Instagram', href: 'https://instagram.com/picktopinteriors' },
+    { icon: 'ri-instagram-fill', name: 'Instagram', href: 'https://www.instagram.com/picktop_interiors?igsh=MzE2NHRqNnpiNW1x' },
     { icon: 'ri-whatsapp-fill', name: 'WhatsApp', href: 'https://wa.me/919946826583' }
   ];
 

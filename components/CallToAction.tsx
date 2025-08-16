@@ -1,6 +1,8 @@
 
 'use client';
 
+import { openWhatsApp } from '@/utils/whatsapp';
+
 export default function CallToAction() {
   return (
     <section className="relative py-24 bg-slate-900 text-white overflow-hidden">
@@ -28,8 +30,12 @@ export default function CallToAction() {
         </p>
         
         <div className="flex flex-col sm:flex-row gap-6 justify-center mb-16">
-          <button className="group bg-amber-500 hover:bg-amber-600 text-black font-semibold px-12 py-6 rounded-none transition-all transform hover:scale-105 whitespace-nowrap cursor-pointer text-lg">
+          <button 
+            onClick={() => openWhatsApp('consultation')}
+            className="group bg-amber-500 hover:bg-amber-600 text-black font-semibold px-12 py-6 rounded-none transition-all transform hover:scale-105 whitespace-nowrap cursor-pointer text-lg"
+          >
             <span className="flex items-center">
+              <i className="ri-whatsapp-line mr-2"></i>
               Schedule Consultation
               <i className="ri-calendar-line ml-2 group-hover:rotate-12 transition-transform"></i>
             </span>

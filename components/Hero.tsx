@@ -1,6 +1,8 @@
 
 'use client';
 
+import { openWhatsApp } from '@/utils/whatsapp';
+
 export default function Hero() {
   return (
     <section className="relative min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white overflow-hidden">
@@ -32,8 +34,12 @@ export default function Hero() {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-6">
-            <button className="group bg-amber-500 hover:bg-amber-600 text-black font-semibold px-10 py-5 rounded-none transition-all transform hover:scale-105 whitespace-nowrap cursor-pointer border-2 border-amber-500 hover:border-amber-600 text-lg">
+            <button 
+              onClick={() => openWhatsApp('consultation')}
+              className="group bg-amber-500 hover:bg-amber-600 text-black font-semibold px-10 py-5 rounded-none transition-all transform hover:scale-105 whitespace-nowrap cursor-pointer border-2 border-amber-500 hover:border-amber-600 text-lg"
+            >
               <span className="flex items-center">
+                <i className="ri-whatsapp-line mr-2"></i>
                 Schedule Consultation
                 <i className="ri-arrow-right-line ml-2 group-hover:translate-x-1 transition-transform"></i>
               </span>
@@ -48,7 +54,7 @@ export default function Hero() {
           
           <div className="mt-16 grid grid-cols-2 lg:grid-cols-3 gap-8 text-center">
             <div>
-              <div className="text-3xl font-light text-amber-400 mb-2">15+</div>
+              <div className="text-3xl font-light text-amber-400 mb-2">7+</div>
               <div className="text-slate-400 text-sm uppercase tracking-wider">Years Experience</div>
             </div>
             <div>
